@@ -3,7 +3,6 @@ Nutreezy — Smart Food Recommendation & Nutrition Analyzer
 Nutreezy adalah aplikasi berbasis Machine Learning yang membantu pengguna untuk:
 - Menganalisis kandungan nutrisi makanan
 - Memprediksi jumlah kalori menggunakan model regresi
-- Mengklasifikasikan manfaat makanan
 - Memberikan rekomendasi alternatif makanan yang lebih sehat
 
 Aplikasi ini dibangun menggunakan 
@@ -11,16 +10,14 @@ Python, Pandas, Streamlit, dan Scikit-Learn(Regresi Linear)
 
 Fitur
 
-- Input / pilih makanan dari dataset  
+- pilih makanan dari dataset  
 - Prediksi kalori menggunakan Machine Learning (Linear Regression)  
 - Klasifikasi manfaat makanan (Otot / Energi / Diet / Imunitas)  
 - NutriScore (A - E)  
 - Rekomendasi makanan alternatif yang lebih sehat  
-- Visualisasi grafik nutrisi  
-
+- Visualisasi grafik nutrisi 
 
 Machine Learning Model
-
 Model yang digunakan:
 Algoritma: Linear Regression
 kenapa? 
