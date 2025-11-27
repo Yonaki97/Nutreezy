@@ -1,4 +1,4 @@
-Nutreezy — Smart Food Recommendation & Nutrition Analyzer
+Nutreezy-Smart Food Recommendation & Nutrition Analyzer
 
 Nutreezy adalah aplikasi berbasis Machine Learning yang membantu pengguna untuk:
 - Menganalisis kandungan nutrisi makanan
