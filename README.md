@@ -34,20 +34,6 @@ Fitur input:
   - Sugar  
 Output (Target): Calories
 
-Contoh proses training di `model_training.ipynb`:
-
-```python
-from sklearn.linear_model import LinearRegression
-
-X = df[["protein", "fiber", "fat", "sugar"]]
-y = df["calories"]
-
-model = LinearRegression()
-model.fit(X, y)
-
-import joblib
-joblib.dump(model, "calorie_model.pkl")
-
 Cara Menjalankan
 streamlit run src/app.py
 
