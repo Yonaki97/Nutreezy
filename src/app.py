@@ -39,7 +39,7 @@ st.set_page_config(page_title="Nutreezy", page_icon="🥗")
 
 st.title(" Nutreezy - Smart Food Analyzer")
 
-# PILIH MAKANAN
+
 food_list = sorted(df['food'].unique().tolist())
 selected_food = st.selectbox("Pilih makanan:", food_list)
 
@@ -69,7 +69,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ANALISIS
 benefit = classify_benefit(food_data)
 score = nutriscore(food_data)
 
@@ -77,7 +76,6 @@ st.subheader(" Hasil Analisis")
 st.success(f"Manfaat utama: **{benefit}**")
 st.info(f"NutriScore: **{score}**")
 
-# GRAFIK
 st.subheader(" Grafik Nutrisi")
 labels = ["Protein", "Fat", "Carbs", "Fiber","Sugar"]
 sample = [
@@ -94,7 +92,6 @@ fig, ax = plt.subplots()
 ax.bar(labels, sample)
 st.pyplot(fig)
 
-# REKOMENDASI
 st.subheader(" Alternatif Lebih Sehat")
 alternatives = healthier_alternatives(selected_food, df, top_n=1)
 
